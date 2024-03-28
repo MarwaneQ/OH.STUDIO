@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 function Header() {
   const [test,setTest] = useState(1) 
   return (
-    <header className=''>
-      <div>
-        <ul className='flex justify-between backdrop-blur-sm bg-white/30'>
+    <header className='backdrop-filter backdrop-blur-[20px]'>
+      <nav className='backdrop-filter backdrop-blur-[20px]'>
+        <ul className='flex'>
           <div>
             <li>
               <a href="">Home</a>
@@ -22,7 +22,7 @@ function Header() {
             </li>
           </div>
         </ul>
-      </div>
+      </nav>
     </header>
   )
 }
