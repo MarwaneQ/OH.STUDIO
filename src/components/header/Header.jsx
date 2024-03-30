@@ -1,30 +1,32 @@
-import React, { useState } from 'react'
-
+import { NavLink, Outlet } from "react-router-dom";
+import './Header.css'
 function Header() {
-  const [test,setTest] = useState(1) 
   return (
-    <header className='backdrop-filter backdrop-blur-[20px]'>
-      <nav className='backdrop-filter backdrop-blur-[20px]'>
-        <ul className='flex'>
+    <>
+    <header className="flex  bg-transparent  justify-center w-full">
+      <nav className="p-6 md:w-[870px]  flex justify-center">
+        <ul className="flex lg:justify-around backdrop-blur-md bg-[#e8e5e480] p-2 w-[270px] md:w-1/3 justify-around lg:w-2/6 lg:h-12 items-center   rounded-full">
           <div>
             <li>
-              <a href="">Home</a>
+              <NavLink to='/' className="font-thin ">Home</NavLink>
             </li>
           </div>
           <div>
             <li>
-              <a href="">Profile</a>
+              <NavLink to='Profile' className="font-thin">Profile</NavLink>
             </li>
           </div>
           <div>
             <li>
-              <a href="">Contact</a>
+              <NavLink to='Contact' className="font-thin">Contact</NavLink>
             </li>
           </div>
         </ul>
       </nav>
     </header>
-  )
+    <Outlet />
+    </>
+  );
 }
 
-export default Header
+export default Header;
