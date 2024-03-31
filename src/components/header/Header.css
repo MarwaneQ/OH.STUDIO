@@ -1,4 +1,6 @@
 nav ul div li  .active {
    border-radius: 9999px;
    background-color: white;
+   color: #000;
+   padding: 0.5rem 1rem;
 }
