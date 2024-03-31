@@ -2,7 +2,7 @@
 function ShowCase() {
   return (
     <div>
-      <div className="flex flex-wrap md:mt-52">
+      <div className="flex flex-wrap md:mt-44">
         <div className='flex justify-center flex-wrap mb-9'>
           <div className="w-1/3 overflow-hidden rounded-2xl mr-3">
           <img src="/public/img-5.webp" alt="" className="w-full   hover:blur-md bg-cover " />
