@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import './hero/hero.css'
+import '../hero/hero.css'
+import Experience from "./Experience";
 function Profile() {
   const [loaded, setLoaded] = useState(false);
 
@@ -35,6 +36,30 @@ function Profile() {
           </h1>
           
         </div>
+      </div>
+      <div className={` bg-white  flex flex-col items-center  `}>
+        <div className="flex flex-col items-center align-middle justify-center text-center h-[400px]">
+        <ul className={`md:flex  md:justify-center hero-text ${loaded ? 'animated' : ''}`}>
+            <li className="m-2 bg-[#e8e5e480] rounded-full px-[10px] py-[5px] font-thin">Experience</li>
+          </ul>
+          <h1 className={`font-normal	md:leading-tight text-xl	md:text-4xl mb-7 hero-text ${loaded ? 'profile' : ''}`}>
+          Where I've worked
+          </h1>
+        </div>
+        <div className="grid grid-cols-3 gap-16">
+        <Experience date={'2017 - Present'} place={`OH.STUDIO`} type={'Freelance Designer'} position={'Director'}/>
+        <Experience date={'2021 - Present'} place={`Friendly Studio`} type={'Lead Product Designer'} position={'Freelance'}/>
+        <Experience date={'2022'} place={`R/GA`} type={'Senior Visual Designer'} position={'Freelance'}/>
+        <Experience date={'2021'} place={`R/GA`} type={'Senior Visual Designer'} position={'Freelance'}/>
+        <Experience date={'2021'} place={`AKQA`} type={'Senior Designer'} position={'Freelance'}/>
+        <Experience date={'2020'} place={`AKQA`} type={'Senior Designer'} position={'Freelance'}/>
+        <Experience date={'2019'} place={`UI Centric`} type={'Senior Product Designer'} position={'Freelance'}/>
+        <Experience date={'2017'} place={`Agency TK`} type={'Senior Digital Designer'} position={'Permanent'}/>
+        <Experience date={'2012'} place={`Agency TK`} type={'Digital Designer'} position={'Permanent'}/>
+        <Experience date={'2009'} place={`Next Level`} type={'Digital Designer'} position={'Permanent'}/>
+        <Experience date={'2008'} place={`Next Level`} type={'Junior Digital Designer'} position={'Permanent'}/>
+        </div>
+        
       </div>
     </div>
   )
