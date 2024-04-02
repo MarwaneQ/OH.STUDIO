@@ -1,0 +1,41 @@
+.hero-text {
+    opacity: 0;
+    transform: perspective(1200px) translateX(100px) translateY(100px) scale(0.5) rotate(30deg);
+    transition: opacity 1s, transform 1s;
+  }
+
+@keyframes moveInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(40%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  .animate {
+    animation-name: moveInFromBottom;
+    animation-duration: 1s; 
+    animation-delay: 0.5s; 
+    animation-fill-mode: forwards; 
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes moveInFromBottomCase {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  .animated {
+    animation-name: moveInFromBottomCase;
+    animation-duration: 1s; 
+    animation-delay: 0.7s; 
+    animation-fill-mode: forwards; 
+    animation-timing-function: ease-in-out;
+  }
+  
