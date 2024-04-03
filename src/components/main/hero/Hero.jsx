@@ -18,9 +18,9 @@ function Hero() {
           <div className="md:w-full md:flex md:justify-center hidden">
           <ul className={`md:flex  md:justify-center hero-text ${loaded ? 'animated' : ''}`}>
             <li className="m-2 rounded-full px-[5px] py-[5px]">Expertise</li>
-            <li className="m-2 bg-[#e8e5e480] rounded-full px-[10px] py-[5px] font-thin">Branding</li>
-            <li className="m-2 bg-[#e8e5e480] rounded-full px-[10px] py-[5px] font-thin">Product</li>
-            <li className="m-2 bg-[#e8e5e480] rounded-full px-[10px] py-[5px] font-thin">Design Systems</li>
+            <li className="m-2 bg-[#e8e5e480] rounded-full px-[10px] py-[5px] font-light">Branding</li>
+            <li className="m-2 bg-[#e8e5e480] rounded-full px-[10px] py-[5px] font-light">Product</li>
+            <li className="m-2 bg-[#e8e5e480] rounded-full px-[10px] py-[5px] font-light">Design Systems</li>
           </ul>
         </div>
         </div>

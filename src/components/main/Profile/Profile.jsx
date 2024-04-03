@@ -42,11 +42,11 @@ function Profile() {
         <ul className={`md:flex  md:justify-center hero-text ${loaded ? 'animated' : ''}`}>
             <li className="m-2 bg-[#e8e5e480] rounded-full px-[10px] py-[5px] font-thin">Experience</li>
           </ul>
-          <h1 className={`font-normal	md:leading-tight text-xl	md:text-4xl mb-7 hero-text ${loaded ? 'profile' : ''}`}>
+          <h1 className={`font-normal	md:leading-tight text-3xl	md:text-4xl mb-7 hero-text ${loaded ? 'profile' : ''}`}>
           Where I've worked
           </h1>
         </div>
-        <div className="grid grid-cols-3 gap-16">
+        <div className="grid md:grid-cols-3  w-[70%]">
         <Experience date={'2017 - Present'} place={`OH.STUDIO`} type={'Freelance Designer'} position={'Director'}/>
         <Experience date={'2021 - Present'} place={`Friendly Studio`} type={'Lead Product Designer'} position={'Freelance'}/>
         <Experience date={'2022'} place={`R/GA`} type={'Senior Visual Designer'} position={'Freelance'}/>

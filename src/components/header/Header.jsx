@@ -9,17 +9,17 @@ function Header() {
         <ul className="flex lg:justify-around backdrop-blur-md bg-[#e8e5e480] p-2 w-[270px] md:w-1/3 justify-around lg:w-2/6 lg:h-12 items-center   rounded-full">
           <div className="">
             <li>
-              <NavLink to='/' className="font-thin ">Home</NavLink>
+              <NavLink to='/' className="font-light ">Home</NavLink>
             </li>
           </div>
           <div>
             <li>
-              <NavLink to='Profile' className="font-thin">Profile</NavLink>
+              <NavLink to='Profile' className="font-light">Profile</NavLink>
             </li>
           </div>
           <div>
             <li>
-              <NavLink to='Contact' className="font-thin">Contact</NavLink>
+              <NavLink to='Contact' className="font-light">Contact</NavLink>
             </li>
           </div>
         </ul>
