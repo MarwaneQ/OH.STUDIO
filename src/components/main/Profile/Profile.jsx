@@ -26,14 +26,14 @@ function Profile() {
             className={`w-full lg:h-[88%] md:w-1/2 lg:w-1/3 overflow-hidden rounded-2xl md:mr-3 hero-text ${
               loaded ? "animate" : ""
             }`}>
-            <img src="/public/img-12.webp" className="w-full bg-cover " />
+            <img src="public/img-12.webp" className="w-full bg-cover " />
           </div>
           <div
             className={`hidden md:block w-full lg:h-[88%] md:w-1/2 lg:w-1/3 overflow-hidden rounded-2xl md:ml-2 mt-8 md:mt-0 hero-text ${
               loaded ? "animate" : ""
             }`}>
             <img
-              src="/public/img-13.webp"
+              src="public/img-13.webp"
               className="w-full md:h-full bg-cover "
             />
           </div>
