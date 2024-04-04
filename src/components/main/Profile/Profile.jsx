@@ -9,7 +9,7 @@ function Profile() {
   }, []);
   return (
     <div>
-      <div className={` bg-white  flex flex-col items-center md:mt-16 `}>
+      <div className={` bg-white  flex flex-col items-center md:mt-16  `}>
         <div className="flex flex-col items-center align-middle justify-center text-center h-[400px]">
           <h1 className={`font-normal	md:leading-tight text-4xl	md:text-6xl  hero-text ${loaded ? 'profile' : ''}`}>
             Hey 👋🏼 I'm Oli 
@@ -26,10 +26,10 @@ function Profile() {
           </div>
         </div>
         </div>
-        <div className={` bg-white  flex flex-col items-center md:mt-5 `}>
+        <div className={` bg-white  flex flex-col items-center md:mt-5 -mb-32 md:-mb-5 `}>
         <div className="flex flex-col items-center align-middle justify-center text-center h-[400px]">
         <ul className={`md:flex  md:justify-center hero-text ${loaded ? 'animated' : ''}`}>
-            <li className="m-2 bg-[#e8e5e480] rounded-full px-[10px] py-[5px] font-thin">About</li>
+            <li className="m-2 bg-[#e8e5e480] rounded-full px-[10px] py-[5px] font-light">About</li>
           </ul>
           <h1 className={`font-normal	md:leading-tight text-xl	md:text-4xl mb-7 hero-text ${loaded ? 'profile' : ''}`}>
           A freelance designer based in the UK.<br /> I combine my experience in product<br /> and brand to solve problems, tell stories, and <br />create compelling experiences.
@@ -40,13 +40,13 @@ function Profile() {
       <div className={` bg-white  flex flex-col items-center  `}>
         <div className="flex flex-col items-center align-middle justify-center text-center h-[400px]">
         <ul className={`md:flex  md:justify-center hero-text ${loaded ? 'animated' : ''}`}>
-            <li className="m-2 bg-[#e8e5e480] rounded-full px-[10px] py-[5px] font-thin">Experience</li>
+            <li className="m-2 bg-[#e8e5e480] rounded-full px-[10px] py-[5px] font-light">Experience</li>
           </ul>
           <h1 className={`font-normal	md:leading-tight text-3xl	md:text-4xl mb-7 hero-text ${loaded ? 'profile' : ''}`}>
           Where I've worked
           </h1>
         </div>
-        <div className="grid md:grid-cols-3  w-[70%]">
+        <div className="grid md:grid-cols-3  w-[70%] -mt-[6em]">
         <Experience date={'2017 - Present'} place={`OH.STUDIO`} type={'Freelance Designer'} position={'Director'}/>
         <Experience date={'2021 - Present'} place={`Friendly Studio`} type={'Lead Product Designer'} position={'Freelance'}/>
         <Experience date={'2022'} place={`R/GA`} type={'Senior Visual Designer'} position={'Freelance'}/>
@@ -61,6 +61,16 @@ function Profile() {
         </div>
         
       </div>
+      <div className={` bg-white  flex flex-col items-center  `}>
+        <div className="flex flex-col items-center align-middle justify-center text-center h-[400px]">
+        <ul className={`md:flex  md:justify-center hero-text ${loaded ? 'animated' : ''}`}>
+            <li className="m-2 bg-[#e8e5e480] rounded-full px-[10px] py-[5px] font-light">Clients</li>
+          </ul>
+          <h1 className={`font-normal	md:leading-tight text-3xl	md:text-4xl mb-7 hero-text ${loaded ? 'profile' : ''}`}>
+          Who I've worked with
+          </h1>
+        </div>
+        </div>
     </div>
   )
 }
