@@ -12,7 +12,7 @@ function ShowCase() {
       <div className={`flex flex-wrap md:mt-44 justify-center`}>
         <div className='flex justify-center flex-wrap md:mb-9 p-5 md:p-0 '>
           <div className={`w-full  md:w-1/2 lg:w-1/3 overflow-hidden rounded-2xl md:mr-3 hero-text ${loaded ? 'animate' : ''}`}>
-          <img src="p" alt="" className="w-full  transition duration-400	 hover:blur-md bg-cover " />
+          <img src="/img-5.webp" alt="" className="w-full  transition duration-400	 hover:blur-md bg-cover " />
           </div>
           <div className={`w-full md:w-1/2 lg:w-1/3 overflow-hidden rounded-2xl md:ml-2 mt-8 md:mt-0 hero-text ${loaded ? 'animate' : ''}`}>
           <img src="/img-6.webp" alt="" className="w-full transition duration-400 hover:blur-md bg-cover " />
