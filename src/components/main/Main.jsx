@@ -1,3 +1,4 @@
+import Footer from "../Footer/Footer";
 import ShowCase from "./ShowCase/ShowCase";
 import Hero from "./hero/Hero";
 function Main() {
@@ -5,6 +6,7 @@ function Main() {
     <>
       <Hero />
       <ShowCase />
+      <Footer />
     </>
   );
 }

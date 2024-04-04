@@ -7,6 +7,7 @@ function Hero() {
     setLoaded(true);
   }, []);
   return (
+    <>
     <div>
       <div className={` bg-white  flex flex-col items-center md:mt-16 `}>
         <div className="flex flex-col items-center align-middle justify-center text-center h-[400px]">
@@ -38,6 +39,7 @@ function Hero() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

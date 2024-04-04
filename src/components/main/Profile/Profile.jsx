@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "../hero/hero.css";
 import Experience from "./Experience";
+import Footer from "../../Footer/Footer";
 function Profile() {
   const [loaded, setLoaded] = useState(false);
 
@@ -77,7 +78,7 @@ function Profile() {
             Where I've worked
           </h1>
         </div>
-        <div className="grid md:grid-cols-3  w-[70%] -mt-[6em]">
+        <div className="grid md:grid-cols-3  w-[70%] -mt-[6em] mb-5">
           <Experience
             date={"2017 - Present"}
             place={`OH.STUDIO`}
@@ -146,7 +147,7 @@ function Profile() {
           />
         </div>
       </div>
-      <div className={` bg-white  flex flex-col items-center  `}>
+      {/* <div className={` bg-white  flex flex-col items-center  `}>
         <div className="flex flex-col items-center align-middle justify-center text-center h-[400px]">
           <ul
             className={`md:flex  md:justify-center hero-text ${
@@ -165,9 +166,29 @@ function Profile() {
         </div>
         <div>
           <img src="/public/l-11.webp" alt="" />
+        </div> */}
+        <div className=" flex justify-center items-center">
+      <div className={` bg-white  flex flex-col  justify-center `}>
+        <div className="flex flex-col  justify-center text-center h-[400px]">
+          <h1
+            className={`font-normal	md:leading-tight text-4xl	md:text-6xl mb-3 hero-text ${
+              loaded ? "animate" : ""
+            }`}>
+            Let's work together.
+          </h1>
+          <div className="md:w-full md:flex md:justify-center">
+            <a href="/"
+              className={`md:flex text-[#7f7f7f] text-4xl md:text-6xl md:justify-center hero-text ${
+                loaded ? "animated" : ""
+              }`}>
+              Get in touch.
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+      </div>
+        <Footer />
+      </div>
   );
 }
 

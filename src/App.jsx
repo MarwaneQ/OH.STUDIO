@@ -8,7 +8,7 @@ import Header from "./components/header/Header";
 import "./App.css";
 import Main from "./components/main/Main";
 import Profile from "./components/main/Profile/Profile";
-import Contact from "./components/main/Contact";
+import Contact from "./components/main/Contact/Contact";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
